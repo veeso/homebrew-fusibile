@@ -2,7 +2,7 @@ class Fusibile < Formula
   desc "Mount remote file systems locally via FUSE or Dokany"
   homepage "https://github.com/remotefs-rs/remotefs-rs-fuse"
   license "MIT"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     # The Apple Silicon build vendors Samba, which links gnutls/libunistring
@@ -10,23 +10,23 @@ class Fusibile < Formula
     on_arm do
       depends_on "gnutls"
       depends_on "libunistring"
-      url "https://github.com/remotefs-rs/remotefs-rs-fuse/releases/latest/download/fusibile-v1.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5b4b1b1b0383770705509486022d5a011918ed35cc3a511ab29e984c11b2b0a5"
+      url "https://github.com/remotefs-rs/remotefs-rs-fuse/releases/latest/download/fusibile-v1.0.1-aarch64-apple-darwin.tar.gz"
+      sha256 "2e56524121bb7b7370178b4b90b6e5c639df62fa3213f562d8571a7a66da5df1"
     end
     on_intel do
-      url "https://github.com/remotefs-rs/remotefs-rs-fuse/releases/latest/download/fusibile-v1.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "ea7272d49668eb64d123129967f41cf00e122285e983eeedf7d1e851944ed45c"
+      url "https://github.com/remotefs-rs/remotefs-rs-fuse/releases/latest/download/fusibile-v1.0.1-x86_64-apple-darwin.tar.gz"
+      sha256 "0de9293667e2b88647f5895ff5eb2c1fe7862e78d317f1b342e2ee3f1f3f4591"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/remotefs-rs/remotefs-rs-fuse/releases/latest/download/fusibile-v1.0.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "7eaa5b71fd5bd1518b8ea27215f35b321facf5368a9e420129ce9e5074ac1485"
+      url "https://github.com/remotefs-rs/remotefs-rs-fuse/releases/latest/download/fusibile-v1.0.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1a54f43456bf92c608407be0a2ea336fd1191f716553dd586c025bbe28c0f5b4"
     end
     on_intel do
-      url "https://github.com/remotefs-rs/remotefs-rs-fuse/releases/latest/download/fusibile-v1.0.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "a8b7d8ebaad293137552d9989c43fdf8dddbce5b0262f05ac7f766d187ba8738"
+      url "https://github.com/remotefs-rs/remotefs-rs-fuse/releases/latest/download/fusibile-v1.0.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "b12931a872c69d4be8e506b4b0d71d3427cefe3986d43054e747c470dddf31c9"
     end
   end
 
