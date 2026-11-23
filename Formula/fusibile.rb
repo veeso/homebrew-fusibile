@@ -2,7 +2,7 @@ class Fusibile < Formula
   desc "Mount remote file systems locally via FUSE or Dokany"
   homepage "https://github.com/veeso/remotefs-rs"
   license "MIT"
-  version "1.2.0"
+  version "1.2.1"
 
   on_macos do
     # The Apple Silicon build vendors Samba, which links gnutls/libunistring
@@ -10,23 +10,23 @@ class Fusibile < Formula
     on_arm do
       depends_on "gnutls"
       depends_on "libunistring"
-      url "https://github.com/veeso/remotefs-rs/releases/download/fusibile-v1.2.0/fusibile-v1.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ee87ac5182ae79c20819b61eedf1bb4604b78e78e6f84e99de12237e96dee8e2"
+      url "https://github.com/veeso/remotefs-rs/releases/download/v1.2.1/fusibile-v1.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "88ab2dd11d8e9f960911bbded0900b826d5ed4b7ef0b88516e5694ca6c1572a5"
     end
     on_intel do
-      url "https://github.com/veeso/remotefs-rs/releases/download/fusibile-v1.2.0/fusibile-v1.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "655eabca79ae7e2d6bf437c6963179262ca436fb865a05cd0cfa3cf4fc45a01e"
+      url "https://github.com/veeso/remotefs-rs/releases/download/v1.2.1/fusibile-v1.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "39f08f3fff975dd57c6616293dd5233390f05e96165c5c0a6af3a981d9b933c8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/veeso/remotefs-rs/releases/download/fusibile-v1.2.0/fusibile-v1.2.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "32d6b85b0dd0d34151296600d24a5c4eb05f5c36c4a641eb4c3fc0b0f7b5dce9"
+      url "https://github.com/veeso/remotefs-rs/releases/download/v1.2.1/fusibile-v1.2.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "4c2772efc5ca53a52beff5418edebca192fbd70c8b54c943c9fd7a466171e7cc"
     end
     on_intel do
-      url "https://github.com/veeso/remotefs-rs/releases/download/fusibile-v1.2.0/fusibile-v1.2.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "bab32d081b7b094df61284feebc6dd6cc82e2ff63bb82e1e6f55140510c2773d"
+      url "https://github.com/veeso/remotefs-rs/releases/download/v1.2.1/fusibile-v1.2.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "45abcfc4a14a4128105fefe92047e6012bad621963c93813bfe40019574878d9"
     end
   end
 
